@@ -1,0 +1,161 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+    /* Color de fondo principal: NEGRO */
+    color: #E5E7EB;
+    /* Color de texto principal (gris claro, buen contraste con negro) */
+    --accent-color: #DC2626;
+    /* Color de acento ROJO por defecto (Tailwind red-500) - FIJO */
+    --accent-color-rgb: 220, 38, 38;
+    /* RGB para el color de acento, usado en box-shadow */
+}
+
+.accent-bg {
+    background-color: var(--accent-color);
+}
+
+.accent-text {
+    color: var(--accent-color);
+}
+
+.accent-border {
+    border-color: var(--accent-color);
+}
+
+.section-title {
+    font-size: 2.25rem;
+    /* 36px */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    /* 24px */
+    text-align: center;
+}
+
+.card {
+    background-color: #111111;
+    /* Color de fondo de las tarjetas (gris muy oscuro, casi negro) */
+    border-radius: 0.5rem;
+    /* 8px */
+    padding: 1.5rem;
+    /* 24px */
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.05), 0 2px 4px -1px rgba(255, 255, 255, 0.03);
+    /* Sombra sutil para fondo negro */
+}
+
+/* Ajustes para el tema negro */
+.header-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fondo del header negro con transparencia */
+}
+
+.section-bg-alt {
+    background-color: #0A0A0A;
+    /* Fondo alternativo para secciones, ligeramente diferente al negro puro */
+}
+
+.text-main {
+    color: #E5E7EB;
+    /* Texto principal */
+}
+
+.text-secondary {
+    color: #9CA3AF;
+    /* Texto secundario (gris más oscuro) */
+}
+
+.input-bg {
+    background-color: #1D1D1D;
+    /* Fondo para inputs */
+    border-color: #333333;
+    /* Borde para inputs */
+}
+
+.input-focus-ring {
+    /* Usando variable para el color de acento en el focus */
+    box-shadow: 0 0 0 2px var(--accent-color);
+    border-color: var(--accent-color) !important;
+}
+
+/* Estilos para Animaciones de Scroll */
+.animate-on-scroll,
+.animate-slide-in-left,
+.animate-slide-in-right,
+.animate-fade-in {
+    /* Aplicar estado inicial a todas las clases de animación */
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll {
+    /* Esta es la animación base de "deslizar hacia arriba" */
+    transform: translateY(30px);
+}
+
+.animate-slide-in-left {
+    transform: translateX(-50px);
+}
+
+.animate-slide-in-right {
+    transform: translateX(50px);
+}
+
+.animate-fade-in {
+    /* Solo fade, sin transform */
+    transform: translateY(0);
+    /* Reset transform si no se quiere movimiento */
+}
+
+/* Estado animado */
+.animated {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+    /* Asegura que ambos transforms se reseteen */
+}
+
+/* Estilos para la Sección de Iconos de Tecnología */
+.tech-icon-card {
+    background-color: #1A1A1A;
+    /* Ligeramente más claro que el fondo principal de las tarjetas */
+    border: 1px solid #333333;
+    /* Borde sutil */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    /* 24px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.tech-icon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(var(--accent-color-rgb), 0.2);
+    /* Sombra con color de acento */
+}
+
+.tech-icon-card>i {
+    /* Específico para Devicon si usa font-size */
+    font-size: 3rem;
+    /* 48px */
+    margin-bottom: 0.75rem;
+    /* 12px */
+    color: var(--accent-color);
+    /* Color del icono usando el acento */
+}
+
+.tech-icon-card p {
+    font-size: 0.875rem;
+    /* 14px */
+    font-weight: 500;
+    color: #D1D5DB;
+    /* Texto más claro para los nombres de las tecnologías */
+}
+
+/* Estilos para el menú responsivo */
+.mobile-menu {
+    background-color: rgba(10, 10, 10, 0.95);
+    /* section-bg-alt con más opacidad */
+    backdrop-filter: blur(5px);
+}

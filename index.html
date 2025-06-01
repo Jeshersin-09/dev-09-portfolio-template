@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Developer Portfolio Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body id="pageTop">
+    <header
+      class="py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 header-bg backdrop-blur-md z-50"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold accent-text animate-fade-in">Dev</h1>
+
+        <nav
+          class="hidden lg:flex animate-fade-in"
+          style="animation-delay: 0.2s"
+        >
+          <ul class="flex space-x-4 sm:space-x-6 text-sm sm:text-base">
+            <li>
+              <a
+                href="#pageTop"
+                class="text-main hover:accent-text transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-main hover:accent-text transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-main hover:accent-text transition-colors"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#tech-stack"
+                class="text-main hover:accent-text transition-colors"
+                >Tech Stack</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="text-main hover:accent-text transition-colors"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-main hover:accent-text transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-main focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden mobile-menu absolute top-full left-0 right-0 shadow-lg"
+      >
+        <ul class="flex flex-col items-center py-4">
+          <li>
+            <a
+              href="#pageTop"
+              class="block text-main hover:accent-text transition-colors py-2"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="block text-main hover:accent-text transition-colors py-2"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="block text-main hover:accent-text transition-colors py-2"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#tech-stack"
+              class="block text-main hover:accent-text transition-colors py-2"
+              >Tech Stack</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="block text-main hover:accent-text transition-colors py-2"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block text-main hover:accent-text transition-colors py-2"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+      <div
+        class="container mx-auto flex flex-col items-center gap-8 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center"
+      >
+        <div
+          class="flex justify-center order-1 lg:order-2 animate-on-scroll lg:animate-slide-in-right"
+        >
+          <img
+            id="heroImage"
+            src="./assets/img/1.png"
+            alt="Portrait of Banjamin Morato"
+            class="rounded-lg shadow-2xl w-64 h-64 sm:w-80 sm:h-80 lg:w-full lg:max-w-sm lg:h-[500px] object-cover"
+          />
+        </div>
+        <div
+          class="text-center lg:text-left order-2 lg:order-1 animate-on-scroll lg:animate-slide-in-left"
+        >
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-main">
+            Your Name
+          </h2>
+          <p class="text-xl sm:text-2xl accent-text mb-6">
+            A Professional Web Developer and Designer
+          </p>
+          <a
+            href="#contact"
+            class="inline-block accent-bg text-white font-semibold py-3 px-8 rounded-lg text-lg hover:opacity-90 transition-opacity"
+          >
+            Hire Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 section-bg-alt overflow-hidden"
+    >
+      <div class="container mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="animate-on-scroll">
+            <img
+              id="experienceImage"
+              src="./assets/img/2.png"
+              alt="Modern workspace with coding setup"
+              class="rounded-lg shadow-xl w-full h-[400px] object-cover"
+            />
+            <div class="mt-6 flex items-center">
+              <span class="text-5xl font-bold accent-text mr-4">06</span>
+              <p class="text-lg text-main">Years of Experience</p>
+            </div>
+          </div>
+          <div class="animate-on-scroll" style="transition-delay: 0.2s">
+            <h3 class="text-3xl font-semibold mb-3 text-main">
+              Read About My Life Struggle Story
+            </h3>
+            <p id="originalStory" class="text-secondary mb-6 leading-relaxed">
+              Here you can tell your personal story, your challenges, and how
+              you overcame them. Make it inspiring and authentic. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. This is a
+              placeholder, replace it with your actual story.
+            </p>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-main"
+                    >UI/UX Design</span
+                  >
+                  <span class="text-sm font-medium accent-text">90%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                  <div
+                    class="accent-bg h-2.5 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-main"
+                    >Web Development</span
+                  >
+                  <span class="text-sm font-medium accent-text">95%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                  <div
+                    class="accent-bg h-2.5 rounded-full"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-main"
+                    >App Development</span
+                  >
+                  <span class="text-sm font-medium accent-text">80%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                  <div
+                    class="accent-bg h-2.5 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="inline-block accent-bg text-white font-semibold py-3 px-6 rounded-lg text-base hover:opacity-90 transition-opacity mt-8"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="services"
+      class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
+      <div class="container mx-auto">
+        <h2 class="section-title text-main animate-on-scroll">
+          My <span class="accent-text">Expertise</span>
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card text-center animate-on-scroll">
+            <div
+              class="accent-bg text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-main">
+              Frontend Development
+            </h3>
+            <p class="text-secondary">
+              Creating interactive and responsive user interfaces using modern
+              technologies like React, Vue, or Angular.
+            </p>
+          </div>
+          <div
+            class="card text-center animate-on-scroll"
+            style="transition-delay: 0.15s"
+          >
+            <div
+              class="accent-bg text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-main">
+              Backend Development
+            </h3>
+            <p class="text-secondary">
+              Building robust and scalable APIs, database management, and
+              server-side logic with Node.js, Python (Django/Flask), etc.
+            </p>
+          </div>
+          <div
+            class="card text-center animate-on-scroll"
+            style="transition-delay: 0.3s"
+          >
+            <div
+              class="accent-bg text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-main">UI/UX Design</h3>
+            <p class="text-secondary">
+              Designing intuitive and engaging user experiences, prototyping,
+              and usability testing to ensure the best interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="tech-stack"
+      class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 section-bg-alt overflow-hidden"
+    >
+      <div class="container mx-auto">
+        <h2 class="section-title text-main animate-on-scroll">
+          My <span class="accent-text">Tech Stack</span>
+        </h2>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8"
+        >
+          <div class="tech-icon-card animate-on-scroll">
+            <i class="devicon-javascript-plain"></i>
+            <p>JavaScript</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.05s"
+          >
+            <i class="devicon-react-original"></i>
+            <p>React</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.1s"
+          >
+            <i class="devicon-nextjs-original-wordmark"></i>
+            <p>Next.js</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.15s"
+          >
+            <i class="devicon-nodejs-plain-wordmark"></i>
+            <p>Node.js</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.2s"
+          >
+            <i class="devicon-python-plain"></i>
+            <p>Python</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.25s"
+          >
+            <i class="devicon-mongodb-plain-wordmark"></i>
+            <p>MongoDB</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.3s"
+          >
+            <i class="devicon-postgresql-plain-wordmark"></i>
+            <p>PostgreSQL</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.35s"
+          >
+            <i class="devicon-docker-plain-wordmark"></i>
+            <p>Docker</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.4s"
+          >
+            <i class="devicon-git-plain"></i>
+            <p>Git</p>
+          </div>
+          <div
+            class="tech-icon-card animate-on-scroll"
+            style="transition-delay: 0.45s"
+          >
+            <i class="devicon-tailwindcss-plain"></i>
+            <p>Tailwind CSS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="portfolio"
+      class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 section-bg-alt overflow-hidden"
+    >
+      <div class="container mx-auto">
+        <h2 class="section-title text-main animate-on-scroll">
+          My <span class="accent-text">Projects</span>
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card animate-on-scroll">
+            <img
+              id="project1Image"
+              src="./assets/img/3.png"
+              alt="Abstract representation of a web application"
+              class="rounded-md mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2 text-main">
+              Project Name One
+            </h3>
+            <p class="text-secondary text-sm mb-3">
+              Brief description of the project and technologies used.
+            </p>
+            <a href="#" class="accent-text hover:underline font-medium"
+              >View Details &rarr;</a
+            >
+          </div>
+          <div class="card animate-on-scroll" style="transition-delay: 0.15s">
+            <img
+              id="project2Image"
+              src="./assets/img/4.png"
+              alt="Dynamic 3D rendering for a tech project"
+              class="rounded-md mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2 text-main">
+              Project Name Two
+            </h3>
+            <p class="text-secondary text-sm mb-3">
+              Another description of an interesting project.
+            </p>
+            <a href="#" class="accent-text hover:underline font-medium"
+              >View Details &rarr;</a
+            >
+          </div>
+          <div
+            class="card accent-border border-2 animate-on-scroll"
+            style="transition-delay: 0.3s"
+          >
+            <img
+              id="project3Image"
+              src="./assets/img/5.png"
+              alt="Visually striking abstract art for a featured project"
+              class="rounded-md mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2 text-main">
+              Featured Project
+            </h3>
+            <p class="text-secondary text-sm mb-3">
+              This is a special project I want to highlight.
+            </p>
+            <a href="#" class="accent-text hover:underline font-medium"
+              >View Details &rarr;</a
+            >
+          </div>
+        </div>
+        <div class="text-center mt-12 animate-on-scroll">
+          <a
+            href="#"
+            class="inline-block accent-bg text-white font-semibold py-3 px-8 rounded-lg text-lg hover:opacity-90 transition-opacity"
+          >
+            View More Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div class="container mx-auto text-center max-w-3xl animate-on-scroll">
+        <img
+          id="testimonialImage"
+          src="./assets/img/6.png"
+          alt="Professional avatar for a client testimonial"
+          class="w-24 h-24 rounded-full mx-auto mb-6 shadow-lg object-cover"
+        />
+        <p class="text-xl italic text-main mb-6">
+          "Working with Banjamin was an incredible experience. Their
+          professionalism and attention to detail exceeded my expectations.
+          Highly recommended!"
+        </p>
+        <h4 class="text-lg font-semibold accent-text">Client Name</h4>
+        <p class="text-sm text-gray-500">CEO, Example Company</p>
+      </div>
+    </section>
+
+    <section
+      id="blog"
+      class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 section-bg-alt overflow-hidden"
+    >
+      <div class="container mx-auto">
+        <h2 class="section-title text-main animate-on-scroll">
+          Latest from the <span class="accent-text">Blog</span>
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div class="card animate-on-scroll" style="transition-delay: 0.2s">
+            <img
+              id="blog1Image"
+              src="./assets/img/7.png"
+              alt="Conceptual image for web design trends"
+              class="rounded-md mb-4 w-full h-48 object-cover"
+            />
+            <p class="accent-text text-sm font-medium mb-1">
+              Web Development • May 25, 2025
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-main">
+              The Latest Web Design Trends for 2025
+            </h3>
+            <p class="text-secondary text-sm mb-3">
+              A look at what's hot and what's next in the world of web design.
+            </p>
+            <a
+              href="#"
+              class="text-gray-400 hover:accent-text font-medium text-sm transition-colors"
+              >Read More &rarr;</a
+            >
+          </div>
+          <div class="card animate-on-scroll" style="transition-delay: 0.35s">
+            <img
+              id="blog2Image"
+              src="./assets/img/8.png"
+              alt="Image representing productivity for remote developers"
+              class="rounded-md mb-4 w-full h-48 object-cover"
+            />
+            <p class="accent-text text-sm font-medium mb-1">
+              Productivity • May 18, 2025
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-main">
+              How to Stay Productive as a Remote Developer
+            </h3>
+            <p class="text-secondary text-sm mb-3">
+              Tips and tricks to maximize your efficiency working from home.
+            </p>
+            <a
+              href="#"
+              class="text-gray-400 hover:accent-text font-medium text-sm transition-colors"
+              >Read More &rarr;</a
+            >
+          </div>
+          <div class="card animate-on-scroll" style="transition-delay: 0.5s">
+            <img
+              id="blog3Image"
+              src="./assets/img/9.png"
+              alt="Abstract representation of Artificial Intelligence and programming"
+              class="rounded-md mb-4 w-full h-48 object-cover"
+            />
+            <p class="accent-text text-sm font-medium mb-1">
+              Technology • May 10, 2025
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-main">
+              Introduction to Artificial Intelligence for Programmers
+            </h3>
+            <p class="text-secondary text-sm mb-3">
+              Basic concepts and how to start exploring the fascinating field of
+              AI.
+            </p>
+            <a
+              href="#"
+              class="text-gray-400 hover:accent-text font-medium text-sm transition-colors"
+              >Read More &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
+      <div class="container mx-auto max-w-3xl">
+        <h2 class="section-title text-main animate-on-scroll">
+          Get in <span class="accent-text">Touch</span>
+        </h2>
+        <form
+          class="card space-y-6 animate-on-scroll"
+          style="transition-delay: 0.2s"
+        >
+          <div>
+            <label for="name" class="block text-sm font-medium text-main mb-1"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="w-full input-bg text-main rounded-md p-3 focus:input-focus-ring transition"
+              placeholder="Your Name"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-main mb-1"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="w-full input-bg text-main rounded-md p-3 focus:input-focus-ring transition"
+              placeholder="you@email.com"
+            />
+          </div>
+          <div>
+            <label
+              for="subject"
+              class="block text-sm font-medium text-main mb-1"
+              >Subject</label
+            >
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="w-full input-bg text-main rounded-md p-3 focus:input-focus-ring transition"
+              placeholder="Message Subject"
+            />
+          </div>
+          <div>
+            <label
+              for="message"
+              class="block text-sm font-medium text-main mb-1"
+              >Message</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              class="w-full input-bg text-main rounded-md p-3 focus:input-focus-ring transition"
+              placeholder="Write your message here..."
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="accent-bg text-white font-semibold py-3 px-10 rounded-lg text-lg hover:opacity-90 transition-opacity"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-black border-t border-gray-800">
+      <div class="container mx-auto text-center text-secondary">
+        <p>
+          &copy; <span id="currentYear"></span> Banjamin Morato. All rights
+          reserved.
+        </p>
+        <p class="text-sm">
+          Designed with <span class="accent-text">&hearts;</span> and Tailwind
+          CSS
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Current Year for Footer Script
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      // Smooth Scroll Script
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Close mobile menu if open before scrolling
+            const mobileMenu = document.getElementById("mobile-menu");
+            if (!mobileMenu.classList.contains("hidden")) {
+              mobileMenu.classList.add("hidden");
+            }
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      // Scroll Animation Script - REPEATING ANIMATIONS
+      const animatedElements = document.querySelectorAll(
+        ".animate-on-scroll, .animate-fade-in, .animate-slide-up, .animate-slide-in-left, .animate-slide-in-right"
+      );
+
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1, // Trigger when 10% of the element is visible
+      };
+
+      const animationObserver = new IntersectionObserver(
+        (entries, observerInstance) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animated");
+            } else {
+              entry.target.classList.remove("animated");
+            }
+          });
+        },
+        observerOptions
+      );
+
+      animatedElements.forEach((el) => {
+        if (
+          el.classList.contains("animate-fade-in") ||
+          el.classList.contains("animate-slide-in-left") ||
+          el.classList.contains("animate-slide-in-right")
+        ) {
+          const bounding = el.getBoundingClientRect();
+          if (
+            bounding.top < window.innerHeight &&
+            bounding.bottom > 0 &&
+            bounding.left < window.innerWidth &&
+            bounding.right > 0
+          ) {
+            // Delay initial animation slightly for elements already in view
+            setTimeout(
+              () => el.classList.add("animated"),
+              parseFloat(el.style.transitionDelay || "0") * 1000 + 50
+            );
+          }
+        }
+        animationObserver.observe(el);
+      });
+
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+
+      // Specific handling for initial hero animations (already in view on load)
+      // This ensures they animate once on load without waiting for scroll,
+      // but will still re-animate if scrolled out and back in due to the observer logic.
+      document.addEventListener("DOMContentLoaded", () => {
+        const initialFadeInElements = document.querySelectorAll(
+          "header .animate-fade-in"
+        );
+        initialFadeInElements.forEach((el) => {
+          setTimeout(() => {
+            el.classList.add("animated");
+          }, parseFloat(el.style.transitionDelay || "0") * 1000 + 50);
+        });
+
+        const heroSection = document.querySelector("section:nth-of-type(1)");
+        if (heroSection) {
+          const heroLeft = heroSection.querySelector(".animate-slide-in-left");
+          const heroRight = heroSection.querySelector(
+            ".animate-slide-in-right"
+          );
+
+          if (
+            heroLeft &&
+            heroLeft.getBoundingClientRect().top < window.innerHeight &&
+            heroLeft.getBoundingClientRect().bottom > 0
+          ) {
+            setTimeout(() => heroLeft.classList.add("animated"), 100);
+          }
+          if (
+            heroRight &&
+            heroRight.getBoundingClientRect().top < window.innerHeight &&
+            heroRight.getBoundingClientRect().bottom > 0
+          ) {
+            setTimeout(() => heroRight.classList.add("animated"), 300);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
