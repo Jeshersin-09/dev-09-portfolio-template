@@ -7,7 +7,7 @@
 
 ## DEV-09 Modern Portfolio Template: Launch Your Developer Portfolio in Style! (English)
 
-[![View Live Demo](https://img.shields.io/badge/View%20Demo-Live-brightgreen?style=for-the-badge&logo=netlify)](YOUR_DEMO_LINK_HERE) **DEV-09** is a modern, elegant, and fully responsive developer portfolio template, built with **HTML5, CSS3, and Tailwind CSS**. Designed for easy customization, it's perfect for both developers who are just starting and want a professional online presence quickly, as well as experienced developers looking to update their portfolio with a current design.
+[![View Live Demo](https://img.shields.io/badge/View%20Demo-Live-brightgreen?style=for-the-badge&logo=netlify)](https://jeshersin-09.github.io/dev-09-portfolio-template/) **DEV-09** is a modern, elegant, and fully responsive developer portfolio template, built with **HTML5, CSS3, and Tailwind CSS**. Designed for easy customization, it's perfect for both developers who are just starting and want a professional online presence quickly, as well as experienced developers looking to update their portfolio with a current design.
 
 [Cover Image of the Template - Example: Screenshot of the Hero Section]
 
@@ -132,7 +132,7 @@ If you have questions about basic customization or encounter any issues with the
 
 ## DEV-09 Modern Portfolio Template: ¡Lanza tu Portafolio de Desarrollador con Estilo! (Español)
 
-[![Ver Demo en Vivo](https://img.shields.io/badge/Ver%20Demo-En%20Vivo-brightgreen?style=for-the-badge&logo=netlify)](ENLACE_A_TU_DEMO_AQUI) **DEV-09** es un template de portafolio para desarrolladores moderno, elegante y completamente responsivo, construido con **HTML5, CSS3 y Tailwind CSS**. Diseñado para ser fácilmente personalizable, es perfecto tanto para desarrolladores que están comenzando y quieren una presencia online profesional rápidamente, como para desarrolladores experimentados que buscan actualizar su portafolio con un diseño actual.
+[![Ver Demo en Vivo](https://img.shields.io/badge/Ver%20Demo-En%20Vivo-brightgreen?style=for-the-badge&logo=netlify)](https://jeshersin-09.github.io/dev-09-portfolio-template/) **DEV-09** es un template de portafolio para desarrolladores moderno, elegante y completamente responsivo, construido con **HTML5, CSS3 y Tailwind CSS**. Diseñado para ser fácilmente personalizable, es perfecto tanto para desarrolladores que están comenzando y quieren una presencia online profesional rápidamente, como para desarrolladores experimentados que buscan actualizar su portafolio con un diseño actual.
 
 [Imagen de Portada del Template - Ejemplo: Captura de pantalla del Hero Section]
 
